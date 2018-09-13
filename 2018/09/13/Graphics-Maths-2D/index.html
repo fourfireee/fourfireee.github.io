@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="2D变换 平移 在 row-major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} · \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}     x_1">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-13T15:01:25.720Z">
+<meta property="og:updated_time" content="2018-09-13T15:03:51.407Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Graphics Maths(2D)">
 <meta name="twitter:description" content="2D变换 平移 在 row-major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} · \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}     x_1">
@@ -100,21 +100,7 @@
 \begin{bmatrix}
     x_1+t_x & y_1+t_y & 1 \cr
 \end{bmatrix}</script><p>在 column-major 的情况下，列向量右乘，为</p>
-<script type="math/tex; mode=display">\begin{bmatrix}
-    1 & 0 & t_x \cr
-    0 & 1 & t_y \cr
-    0 & 0 & 1 \cr
-\end{bmatrix} ·
-\begin{bmatrix}
-    x_1 \cr
-    y_1 \cr
-    1 \cr
-\end{bmatrix} =
-\begin{bmatrix}
-    x_1+t_x \cr
-    y_1+t_y \cr
-    1 \cr
-\end{bmatrix}</script>
+
       
     </div>
     <footer class="article-footer">
