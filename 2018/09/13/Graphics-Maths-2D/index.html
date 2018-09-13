@@ -5,17 +5,17 @@
   
   <title>Graphics Maths(2D) | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="2D变换 平移 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} · \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}     x_1+t_x &amp; y_1+t_y &amp; 1 \cr \e">
+  <meta name="description" content="2D变换 平移 在 row-major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} · \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}     x_1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Graphics Maths(2D)">
 <meta property="og:url" content="http://yoursite.com/2018/09/13/Graphics-Maths-2D/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="2D变换 平移 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} · \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}     x_1+t_x &amp; y_1+t_y &amp; 1 \cr \e">
+<meta property="og:description" content="2D变换 平移 在 row-major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} · \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}     x_1">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-13T14:56:43.535Z">
+<meta property="og:updated_time" content="2018-09-13T15:01:25.720Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Graphics Maths(2D)">
-<meta name="twitter:description" content="2D变换 平移 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} · \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}     x_1+t_x &amp; y_1+t_y &amp; 1 \cr \e">
+<meta name="twitter:description" content="2D变换 平移 在 row-major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} · \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}     x_1">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -88,6 +88,7 @@
       
         <p>2D变换</p>
 <p>平移</p>
+<p>在 row-major 的情况下，行向量左乘，为</p>
 <script type="math/tex; mode=display">\begin{bmatrix}
     x_1 & y_1 & 1 \cr
 \end{bmatrix} ·
@@ -98,6 +99,21 @@
 \end{bmatrix} =
 \begin{bmatrix}
     x_1+t_x & y_1+t_y & 1 \cr
+\end{bmatrix}</script><p>在 column-major 的情况下，列向量右乘，为</p>
+<script type="math/tex; mode=display">\begin{bmatrix}
+    1 & 0 & t_x \cr
+    0 & 1 & t_y \cr
+    0 & 0 & 1 \cr
+\end{bmatrix} ·
+\begin{bmatrix}
+    x_1 \cr
+    y_1 \cr
+    1 \cr
+\end{bmatrix} =
+\begin{bmatrix}
+    x_1+t_x \cr
+    y_1+t_y \cr
+    1 \cr
 \end{bmatrix}</script>
       
     </div>
@@ -199,21 +215,5 @@
 <script src="/js/script.js"></script>
 
   </div>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
