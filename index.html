@@ -144,14 +144,14 @@
 <p><img src="http://img2.ph.126.net/Sh8bZuJ7eTRDCF51QFKwXA==/6631535058145362620.jpg" alt=""></p>
 <p>展开可以得到</p>
 <script type="math/tex; mode=display">
-\begin{bmatrix}
-    x_2 \cr
-    y_2 \cr
-\end{matrix}</script>
+\begin{cases}
+    x_2 \\
+    y_2
+\end{cases}</script>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/13/Graphics-Maths-2D/" data-id="cjoohkrp10000wsv12odicwa8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/13/Graphics-Maths-2D/" data-id="cjoohpwcl0000gcv1jtg7rpao" class="article-share-link">Share</a>
       
       
     </footer>
@@ -192,7 +192,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/11/Hello-Hexo-Test/" data-id="cjoohkrp60002wsv1m1v0972v" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/11/Hello-Hexo-Test/" data-id="cjoohpwco0001gcv1x12q1t28" class="article-share-link">Share</a>
       
       
     </footer>
@@ -237,7 +237,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/10/hello-world/" data-id="cjoohkrp40001wsv1bar5bix1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/10/hello-world/" data-id="cjoohpwcq0002gcv1p9c2uvwi" class="article-share-link">Share</a>
       
       
     </footer>
@@ -325,5 +325,21 @@
 <script src="/js/script.js"></script>
 
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
