@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="2D变换 平移 在 row major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} · \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}     x_1">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-19T15:15:11.317Z">
+<meta property="og:updated_time" content="2018-11-19T15:17:56.389Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Graphics Maths(2D)">
 <meta name="twitter:description" content="2D变换 平移 在 row major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} · \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}     x_1">
@@ -116,14 +116,14 @@
     1 \cr
 \end{bmatrix}</script><p>缩放</p>
 <p>在 row major 的情况下，行向量左乘，为</p>
-<p><script type="math/tex">\begin{bmatrix}
+<script type="math/tex; mode=display">\begin{bmatrix}
     x_1 & y_1 & 1 \cr
-\end{bmatrix}</script> ·<br>\begin{bmatrix}<br>    s_x &amp; 0 &amp; 0 \cr<br>    0 &amp; s_y &amp; 0 \cr<br>    0 &amp; 0 &amp; 1 \cr<br>\end{bmatrix} =<br>\begin{bmatrix}<br>    s_x x_1 &amp; s_y y_1 &amp; 1 \cr<br>\end{bmatrix}</p>
+\end{bmatrix}</script><p>\begin{bmatrix}<br>    s_x &amp; 0 &amp; 0 \cr<br>    0 &amp; s_y &amp; 0 \cr<br>    0 &amp; 0 &amp; 1 \cr<br>\end{bmatrix} =<br>\begin{bmatrix}<br>    s_x x_1 &amp; s_y y_1 &amp; 1 \cr<br>\end{bmatrix}</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/13/Graphics-Maths-2D/" data-id="cjoogcjmi0000zov14f4654ky" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/13/Graphics-Maths-2D/" data-id="cjoogfikr0000gcv1gkpn8gyr" class="article-share-link">Share</a>
       
       
     </footer>
@@ -220,21 +220,5 @@
 <script src="/js/script.js"></script>
 
   </div>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
