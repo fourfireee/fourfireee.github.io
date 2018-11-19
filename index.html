@@ -147,11 +147,22 @@
 \begin{cases}
     x_2 = \cos{ \left( \alpha + \beta \right) } = x_1 \cos \beta - y_1 \sin \beta \cr
     y_2    = \sin{ \left( \alpha + \beta \right) } = x_1 \sin \beta + y_1 \cos \beta \cr
-\end{cases}</script>
+\end{cases}</script><p>写成矩阵乘法的形式，在 row major 情况下，行向量左乘，为</p>
+<script type="math/tex; mode=display">\begin{bmatrix}
+    x_1 & y_1 & 1 \cr
+\end{bmatrix} \cdot
+\begin{bmatrix}
+    \cos \beta & \sin \beta & 0 \cr
+    -\sin \beta & \cos \beta & 0 \cr
+    0 & 0 & 1 \cr
+\end{bmatrix} =
+\begin{bmatrix}
+    x_2 & y_2 & 1 \cr
+\end{bmatrix}</script>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/13/Graphics-Maths-2D/" data-id="cjooi29lc00008kv1jf46squ7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/13/Graphics-Maths-2D/" data-id="cjooi97bw000034v113xelz1t" class="article-share-link">Share</a>
       
       
     </footer>
@@ -192,7 +203,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/11/Hello-Hexo-Test/" data-id="cjooi29lf00018kv1et51xc1k" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/11/Hello-Hexo-Test/" data-id="cjooi97bz000134v1mw4t7uv3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -237,7 +248,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/10/hello-world/" data-id="cjooi29lh00028kv1jvo2kq8e" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/10/hello-world/" data-id="cjooi97c1000234v1tmq5y2co" class="article-share-link">Share</a>
       
       
     </footer>
@@ -325,21 +336,5 @@
 <script src="/js/script.js"></script>
 
   </div>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
