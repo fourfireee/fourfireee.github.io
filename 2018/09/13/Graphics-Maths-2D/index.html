@@ -13,7 +13,7 @@
 <meta property="og:description" content="2D变换 平移 在 row major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} \cdot \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://img2.ph.126.net/Sh8bZuJ7eTRDCF51QFKwXA==/6631535058145362620.jpg">
-<meta property="og:updated_time" content="2018-11-19T16:14:36.522Z">
+<meta property="og:updated_time" content="2018-11-19T16:15:31.682Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Graphics Maths(2D)">
 <meta name="twitter:description" content="2D变换 平移 在 row major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} \cdot \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}">
@@ -164,21 +164,24 @@
     x_2 & y_2 & 1 \cr
 \end{bmatrix}</script><p>在 col major 情况下，列向量右乘，为</p>
 <script type="math/tex; mode=display">\begin{bmatrix}
-    \cos{\beta} & -\sin{\beta} \cr
-    \sin{\beta} & \cos{\beta} \cr
+    \cos{\beta} & -\sin{\beta} & 0 \cr
+    \sin{\beta} & \cos{\beta} & 0 \cr
+    0 & 0 & 1
 \end{bmatrix} \cdot
 \begin{bmatrix}
     x_1 \cr
     y_1 \cr
+    1 \cr
 \end{bmatrix} =
 \begin{bmatrix}
     x_2 \cr
     y_2 \cr
+    1 \cr
 \end{bmatrix}</script>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/13/Graphics-Maths-2D/" data-id="cjooigegl000030v1ed2nmux3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/13/Graphics-Maths-2D/" data-id="cjooihkpd0000k0v13g2g0693" class="article-share-link">Share</a>
       
       
     </footer>
