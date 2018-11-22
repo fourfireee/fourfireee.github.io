@@ -186,6 +186,47 @@
 \end{bmatrix} =
 \begin{bmatrix}
     x+y \cdot sh_y & y & 1 \cr
+\end{bmatrix}</script><p>column major</p>
+<script type="math/tex; mode=display">\begin{bmatrix}
+    1 & sh_y & 0 \cr
+    0 & 1 & 0 \cr
+    0 & 0 & 1 \cr
+\end{bmatrix} \cdot
+\begin{bmatrix}
+    x \cr
+    y \cr
+    1 \cr
+\end{bmatrix} =
+\begin{bmatrix}
+    x + y \cdot sh_y \cr
+    y \cr
+    1 \cr
+\end{bmatrix}</script><p>y 相对于x的错切， row major</p>
+<script type="math/tex; mode=display">\begin{bmatrix}
+    x & y & 1 \cr
+\end{bmatrix} \cdot
+\begin{bmatrix}
+    1 & sh_x & 0 \cr
+    0 & 1 & 0 \cr
+    0 & 0 & 1 \cr
+\end{bmatrix} =
+\begin{bmatrix}
+    x & x \cdot sh_x + y & 1 \cr
+\end{bmatrix}</script><p>column major</p>
+<script type="math/tex; mode=display">\begin{bmatrix}
+    1 & 0 & 0 \cr
+    sh_x & 1 & 0 \cr
+    0 & 0 & 1 \cr
+\end{bmatrix} \cdot
+\begin{bmatrix}
+    x \cr
+    y \cr
+    1 \cr
+\end{bmatrix} =
+\begin{bmatrix}
+    x \cr
+    x \cdot sh_x + y \cr
+    1 \cr
 \end{bmatrix}</script>
       
     </div>

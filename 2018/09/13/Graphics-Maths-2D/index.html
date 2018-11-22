@@ -13,7 +13,7 @@
 <meta property="og:description" content="2D变换 平移 在 row major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} \cdot \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://img2.ph.126.net/Sh8bZuJ7eTRDCF51QFKwXA==/6631535058145362620.jpg">
-<meta property="og:updated_time" content="2018-11-22T00:08:13.550Z">
+<meta property="og:updated_time" content="2018-11-22T00:16:30.797Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Graphics Maths 备忘录（一）">
 <meta name="twitter:description" content="2D变换 平移 在 row major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} \cdot \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}">
@@ -190,6 +190,47 @@
 \end{bmatrix} =
 \begin{bmatrix}
     x+y \cdot sh_y & y & 1 \cr
+\end{bmatrix}</script><p>column major</p>
+<script type="math/tex; mode=display">\begin{bmatrix}
+    1 & sh_y & 0 \cr
+    0 & 1 & 0 \cr
+    0 & 0 & 1 \cr
+\end{bmatrix} \cdot
+\begin{bmatrix}
+    x \cr
+    y \cr
+    1 \cr
+\end{bmatrix} =
+\begin{bmatrix}
+    x + y \cdot sh_y \cr
+    y \cr
+    1 \cr
+\end{bmatrix}</script><p>y 相对于x的错切， row major</p>
+<script type="math/tex; mode=display">\begin{bmatrix}
+    x & y & 1 \cr
+\end{bmatrix} \cdot
+\begin{bmatrix}
+    1 & sh_x & 0 \cr
+    0 & 1 & 0 \cr
+    0 & 0 & 1 \cr
+\end{bmatrix} =
+\begin{bmatrix}
+    x & x \cdot sh_x + y & 1 \cr
+\end{bmatrix}</script><p>column major</p>
+<script type="math/tex; mode=display">\begin{bmatrix}
+    1 & 0 & 0 \cr
+    sh_x & 1 & 0 \cr
+    0 & 0 & 1 \cr
+\end{bmatrix} \cdot
+\begin{bmatrix}
+    x \cr
+    y \cr
+    1 \cr
+\end{bmatrix} =
+\begin{bmatrix}
+    x \cr
+    x \cdot sh_x + y \cr
+    1 \cr
 \end{bmatrix}</script>
       
     </div>
