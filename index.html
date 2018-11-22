@@ -173,11 +173,24 @@
     x_2 \cr
     y_2 \cr
     1 \cr
+\end{bmatrix}</script><p>还有一种变换叫错切变换。在正常建模以及渲染场景时，这个变换几乎都不使用到。但是在一些特殊情况下（比如制作草的摆动），可能会用到，而且有奇效。（具体找时间可以写一篇如何制作waving grass来解说）</p>
+<p>错切变换（shearing)的几何意义是：在变换以后，变换后的单个坐标受到变换前多个坐标的影响，以此来造成几何形体的扭曲拉伸。在2D坐标系下可以拆分成两种基础的变换：x相对于y的错切，y相对于x的错切。</p>
+<p>x相对于y的错切，row major</p>
+<script type="math/tex; mode=display">\begin{bmatrix}
+    x & y & 1 \cr
+\end{bmatrix} \cdot
+\begin{bmatrix}
+    1 & 0 & 0 \cr
+    sh_y & 1 _ 0 \cr
+    0 & 0 & 1 \cr
+\end{bmatrix} =
+\begin{bmatrix}
+    x+y \cdot sh_y & y & 1 \cr
 \end{bmatrix}</script>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/13/Graphics-Maths-2D/" data-id="cjorai773000058v1i93a2g3e" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/13/Graphics-Maths-2D/" data-id="cjoru7wqq0000okv1hoi81ghz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -218,7 +231,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/11/Hello-Hexo-Test/" data-id="cjorai777000158v1t9669rio" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/11/Hello-Hexo-Test/" data-id="cjoru7wqt0001okv1d8tdp63m" class="article-share-link">Share</a>
       
       
     </footer>
@@ -263,7 +276,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/10/hello-world/" data-id="cjorai779000258v1d6z3zmjx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/10/hello-world/" data-id="cjoru7wqv0002okv1n893c4au" class="article-share-link">Share</a>
       
       
     </footer>
