@@ -5,20 +5,21 @@
   
   <title>Graphics Maths 备忘录（一） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="2D变换 平移 在 row major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} \cdot \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}">
+  <meta name="description" content="2D变换  平移 在 row major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} \cdot \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Graphics Maths 备忘录（一）">
 <meta property="og:url" content="http://yoursite.com/2018/09/13/Graphics-Maths-2D/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="2D变换 平移 在 row major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} \cdot \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}">
+<meta property="og:description" content="2D变换  平移 在 row major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} \cdot \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://img2.ph.126.net/X9sm8Mw1PSJ2FMT7DkvvPg==/6608235307238433788.jpg">
 <meta property="og:image" content="http://img2.ph.126.net/Sh8bZuJ7eTRDCF51QFKwXA==/6631535058145362620.jpg">
 <meta property="og:image" content="http://img2.ph.126.net/6VcXXL-e_t11DZBFtkwbbQ==/6631634014191879137.png">
-<meta property="og:updated_time" content="2018-11-22T00:30:17.908Z">
+<meta property="og:updated_time" content="2018-12-01T13:25:57.285Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Graphics Maths 备忘录（一）">
-<meta name="twitter:description" content="2D变换 平移 在 row major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} \cdot \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}">
-<meta name="twitter:image" content="http://img2.ph.126.net/Sh8bZuJ7eTRDCF51QFKwXA==/6631535058145362620.jpg">
+<meta name="twitter:description" content="2D变换  平移 在 row major 的情况下，行向量左乘，为 \begin{bmatrix}     x_1 &amp; y_1 &amp; 1 \cr \end{bmatrix} \cdot \begin{bmatrix}     1 &amp; 0 &amp; 0 \cr     0 &amp; 1 &amp; 0 \cr     t_x &amp; t_y &amp; 1 \cr \end{bmatrix} = \begin{bmatrix}">
+<meta name="twitter:image" content="http://img2.ph.126.net/X9sm8Mw1PSJ2FMT7DkvvPg==/6608235307238433788.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -90,6 +91,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>2D变换</p>
+<p><img src="http://img2.ph.126.net/X9sm8Mw1PSJ2FMT7DkvvPg==/6608235307238433788.jpg" alt=""></p>
 <p>平移</p>
 <p>在 row major 的情况下，行向量左乘，为</p>
 <script type="math/tex; mode=display">\begin{bmatrix}
@@ -334,5 +336,21 @@
 <script src="/js/script.js"></script>
 
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>

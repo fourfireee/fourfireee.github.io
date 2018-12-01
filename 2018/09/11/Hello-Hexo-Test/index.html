@@ -12,12 +12,10 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="This is a blog test using Git and Hexo aabbcc $x=y+z^2$ E = mc^2ddeeff">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2018/09/11/Hello-Hexo-Test/svg.svg">
-<meta property="og:updated_time" content="2018-12-01T13:20:38.563Z">
+<meta property="og:updated_time" content="2018-12-01T13:25:51.259Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello Hexo Test">
 <meta name="twitter:description" content="This is a blog test using Git and Hexo aabbcc $x=y+z^2$ E = mc^2ddeeff">
-<meta name="twitter:image" content="http://yoursite.com/2018/09/11/Hello-Hexo-Test/svg.svg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -91,7 +89,6 @@
         <p>This is a blog test using Git and Hexo</p>
 <p>aabbcc $x=y+z^2$</p>
 <script type="math/tex; mode=display">E = mc^2</script><p>ddeeff</p>
-<p><img src="svg.svg" alt=""></p>
 
       
     </div>
@@ -202,5 +199,21 @@
 <script src="/js/script.js"></script>
 
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
